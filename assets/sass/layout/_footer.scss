@@ -1,0 +1,47 @@
+footer{
+    border-top: 2px solid white;
+    color: white;
+    background-color: black;
+    font-family: 'poppins-Regular';
+    .logo-footer{
+        position: relative;
+        bottom: 37px;
+    }
+    .les-footers{
+        padding-top: 10px;
+        h4{
+            font-weight: bolder;
+        }
+        p{
+            font-weight: normal;
+            font-style: normal;
+        }
+        a{
+            color: white;
+            &:hover{
+                color: orange;
+            }
+        }
+    }
+    .copyright{
+        font-size: 12px;
+        text-align: center;
+    }
+
+    @include for-size(tablet-landscape-down)
+    {
+        .footer-write,.logo-footer{
+            text-align: center;
+        }
+    }
+    @include for-size(tablet-landscape-down)
+    {
+        .footer-write{
+            padding-top: 20px;
+        }
+        .copyright{
+            padding-top: 80px;
+        }
+    }
+
+}

@@ -1,0 +1,76 @@
+.ourteam{
+    background-color: black;
+    color: white;
+
+    h2{
+        font-size: 35px;
+        padding-top: 50px;
+        padding-bottom: 40px;
+    }
+    .first-text{
+        h4{
+            font-size: 33;
+            font-family: 'Helvetica-bold';
+            width: 440px ;
+            padding-bottom: 40px;
+        }
+    }
+    .second-text{
+        p{
+            font-size: 16px ;
+            font-family: 'Helvetica-Regular';
+            width: 300px;
+            padding-bottom: 40px;
+            line-height: 22px;
+        }
+    }
+
+    .part-vectors{
+        padding-top: 50px;
+        img{
+            border-radius: 30px;
+            width: 95%;
+        }
+        .name-vectors{
+            padding-top: 10px;
+            padding-bottom: 40px;
+        }
+    }
+    .sociel-media{
+        padding-bottom: 20px !important;
+        text-align: center;
+ 
+        .fb{
+            padding-left: 10px;
+            width: 22px;
+            margin-right: 10px;
+        }
+        .tw{
+            width: 28px;
+        }
+        .ln{
+            width: 25px;
+            margin-left: 10px;
+        }
+    }
+    .lest-line{
+        padding-bottom: 50px;
+        p{
+            font-family: 'Helvetica-Regular';
+            font-size: 13px;
+            text-align: center;
+        }
+    }
+    @include for-size(phone-only) {
+        .part-vectors{
+            img{
+                width: 55% !important;
+            }
+
+        }
+        text-align: center;
+        p,h4{
+            width: auto !important;
+        }
+    }
+}
