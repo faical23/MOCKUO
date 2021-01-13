@@ -1,0 +1,65 @@
+.hero{
+    background-image: url(../img/background/section1-page1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 750px;
+    p{
+        font-size: 16px;
+        font-family: 'arial-Bold';
+    }
+    .left-text{
+        padding-top: 470px;
+        color: white;
+        h2{
+            font-size: 35px;
+            font-family: 'Helvetica-bold';
+        }
+    }
+    .right-menu{
+        text-align: end;
+        padding-top: 250px;
+        a{
+            color: white;
+            &:hover{
+                color: orange;
+            }
+        }
+    }
+    @include for-size(desktop-down ) {
+        height: 650px;
+        .left-text{
+            padding-top: 490px;
+
+        }
+    }
+    @include for-size(tablet-landscape-down ) {
+        height: 550px;
+        .left-text{
+            padding-top: 430px;
+        }
+    }
+    @include for-size(tablet-portrait-down) {
+        height: 450px;
+        .left-text{
+            padding-top: 350px;
+        }
+        
+    }
+    @include for-size(phone-only ) {
+        background-repeat: round !important;
+        height: 400px;
+        .right-menu{
+            padding-top: 150px;
+        }
+        .left-text{
+            padding-top: 300px;
+            h2{
+                font-size: 20px;
+            }
+            p{
+                font-size: 15px;
+            }
+        }
+    }
+}

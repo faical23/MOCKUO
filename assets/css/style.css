@@ -9177,7 +9177,6 @@ textarea {
 }
 
 a:hover {
-  color: red;
   text-decoration: none;
 }
 
@@ -9615,6 +9614,88 @@ footer .copyright {
   }
   footer .copyright {
     padding-top: 80px;
+  }
+}
+
+.hero {
+  background-image: url(../img/background/section1-page1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 750px;
+}
+
+.hero p {
+  font-size: 16px;
+  font-family: 'arial-Bold';
+}
+
+.hero .left-text {
+  padding-top: 470px;
+  color: white;
+}
+
+.hero .left-text h2 {
+  font-size: 35px;
+  font-family: 'Helvetica-bold';
+}
+
+.hero .right-menu {
+  text-align: end;
+  padding-top: 250px;
+}
+
+.hero .right-menu a {
+  color: white;
+}
+
+.hero .right-menu a:hover {
+  color: orange;
+}
+
+@media (max-width: 1200px) {
+  .hero {
+    height: 650px;
+  }
+  .hero .left-text {
+    padding-top: 490px;
+  }
+}
+
+@media (max-width: 992px) {
+  .hero {
+    height: 550px;
+  }
+  .hero .left-text {
+    padding-top: 430px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    height: 450px;
+  }
+  .hero .left-text {
+    padding-top: 350px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero {
+    background-repeat: round !important;
+    height: 400px;
+  }
+  .hero .right-menu {
+    padding-top: 150px;
+  }
+  .hero .left-text {
+    padding-top: 300px;
+  }
+  .hero .left-text h2 {
+    font-size: 20px;
+  }
+  .hero .left-text p {
+    font-size: 15px;
   }
 }
 
