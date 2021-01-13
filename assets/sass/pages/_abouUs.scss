@@ -1,0 +1,94 @@
+.background-hero{
+    background-image: url(../img/image/background-1-page2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 640px;
+    .hero{
+        background-color:rgba(255, 255, 255, 0.8);
+        padding-top: 14px;
+        padding-bottom: 10px;
+        
+        a{
+            color: #333333;
+            &:hover{
+                color: #696969;
+            }
+        }
+        .job-at-con{
+            text-align: center;
+            h6{
+                font-size: 18px;
+            }
+        }
+        .menu-bar{
+            text-align: center;
+            padding-left: 115px;
+            padding-right: 65PX;
+            h6{
+                font-size: 13px;
+            }
+        }
+        @include for-size(desktop-down ) {
+            .menu-bar{
+                padding-left: 0px !important;
+            }
+        }
+        @include for-size(tablet-landscape-down ) {
+            .job-at-con{
+                h6{
+                    font-size: 15px;
+                }
+            }
+            .menu-bar{
+                padding-left: 30px !important;
+                h6{
+                    font-size: 12px;
+                }
+            }
+        }
+        @include for-size(tablet-portrait-down ) {
+            .job-at-con{
+                h6{
+                    font-size: 13px;
+                }
+            }
+            .menu-bar{
+                padding-right: 0px !important;
+            }
+        }
+        @include for-size(phone-only ) {
+            .job-at-con{
+                padding-bottom: 10px;
+            }
+            .menu-bar{
+                padding-left: 0px !important;
+            }
+        }
+    }
+}
+
+.text-1{
+    padding-top: 50px;
+    h2,p{
+        width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    h2{
+        font-family: 'Helvetica-bold';
+        line-height: 38px;
+    }
+    p{
+        padding-top: 14px;
+        font-family: 'Helvetica-Regular';
+        line-height: 22px;
+        font-size: 16px;
+    }
+    @include for-size(tablet-portrait-down ) {
+        text-align: center;
+        h2,p{
+            width: auto !important;
+        }
+    }
+}

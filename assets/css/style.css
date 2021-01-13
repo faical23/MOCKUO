@@ -9154,6 +9154,11 @@ textarea {
 }
 
 @font-face {
+  font-family: 'Helvetica-Medium';
+  src: url(../fonts/Helvetica-medium.ttf);
+}
+
+@font-face {
   font-family: 'poppins-Regular';
   src: url(../fonts/poppins/Poppins-Regular.otf);
 }
@@ -9614,28 +9619,111 @@ footer .copyright {
   }
 }
 
-h1 {
-  font-size: 40px;
+.background-hero {
+  background-image: url(../img/image/background-1-page2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 640px;
 }
 
-.a {
-  font-family: 'arial-Regular';
+.background-hero .hero {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding-top: 14px;
+  padding-bottom: 10px;
 }
 
-.b {
-  font-family: 'poppins-Regular';
+.background-hero .hero a {
+  color: #333333;
 }
 
-.c {
-  font-family: 'arial-Bold';
+.background-hero .hero a:hover {
+  color: #696969;
 }
 
-.d {
-  font-family: 'Helvetica-Regular';
+.background-hero .hero .job-at-con {
+  text-align: center;
 }
 
-.e {
+.background-hero .hero .job-at-con h6 {
+  font-size: 18px;
+}
+
+.background-hero .hero .menu-bar {
+  text-align: center;
+  padding-left: 115px;
+  padding-right: 65PX;
+}
+
+.background-hero .hero .menu-bar h6 {
+  font-size: 13px;
+}
+
+@media (max-width: 1200px) {
+  .background-hero .hero .menu-bar {
+    padding-left: 0px !important;
+  }
+}
+
+@media (max-width: 992px) {
+  .background-hero .hero .job-at-con h6 {
+    font-size: 15px;
+  }
+  .background-hero .hero .menu-bar {
+    padding-left: 30px !important;
+  }
+  .background-hero .hero .menu-bar h6 {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .background-hero .hero .job-at-con h6 {
+    font-size: 13px;
+  }
+  .background-hero .hero .menu-bar {
+    padding-right: 0px !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .background-hero .hero .job-at-con {
+    padding-bottom: 10px;
+  }
+  .background-hero .hero .menu-bar {
+    padding-left: 0px !important;
+  }
+}
+
+.text-1 {
+  padding-top: 50px;
+}
+
+.text-1 h2, .text-1 p {
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.text-1 h2 {
   font-family: 'Helvetica-bold';
+  line-height: 38px;
+}
+
+.text-1 p {
+  padding-top: 14px;
+  font-family: 'Helvetica-Regular';
+  line-height: 22px;
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  .text-1 {
+    text-align: center;
+  }
+  .text-1 h2, .text-1 p {
+    width: auto !important;
+  }
 }
 
 .ourteam {
