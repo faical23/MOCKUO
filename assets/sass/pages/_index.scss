@@ -1,5 +1,5 @@
-.hero{
-    background-image: url(../img/background/section1-page1.png);
+.hero-index{
+   background-image: url(../img/background/section1-page1.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -60,6 +60,72 @@
             p{
                 font-size: 15px;
             }
+        }
+    }
+}
+
+.second-menu{
+    padding-top: 10px;
+    background-color: rgb(225, 225, 225);
+    .nanoSPLASH{
+        padding-left: 80px;
+        h6{
+            font-family: 'arial-Bold';
+            font-size: 16px;
+            color: #222222;
+        }
+    }
+    .menu-bar{
+        padding-right: 30px;
+        h6{
+            font-family: 'arial-Regular';
+            font-size: 16px;
+            font-style: normal;
+            font-weight: initial;
+        }
+        .overview,.tech{
+            color: #414141;
+            &:hover{
+                color:#B6B6B6;
+            }
+        }
+        .button-menu{
+            color: white;
+            position: relative;
+            bottom: 4px;
+        }
+        .button-buy{
+            width: 72px;
+            text-align: center;
+            border-radius: 20px;
+            height: 25px;
+            padding-top: 2px;   
+            background-color: orange;
+            &:hover{
+                background-color: white;
+                border: 1px solid black;
+                color: black;
+            }         
+        }
+        .menu-white{
+            text-align: initial;
+        }
+    }
+    @include for-size(tablet-landscape-down) {
+        .menu-bar{
+            padding-right: 0px !important;
+        }
+    }
+    @include for-size(tablet-portrait-down) {
+        .nanoSPLASH{
+            padding-left: 0px !important;
+        }
+    }
+    @include for-size(phone-only) {
+        text-align: center;
+        .menu-white{
+            padding-top: 5px;
+            text-align:center !important;
         }
     }
 }
