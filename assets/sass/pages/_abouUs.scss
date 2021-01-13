@@ -128,6 +128,10 @@
             }
         }
     }
+    @include for-size(tablet-portrait-down ) {
+        text-align: center;
+    }
+   
 }
 
 .text-3{
@@ -220,6 +224,107 @@
                 margin-left: auto !important;
                 //margin-right: auto !important;
             }
+        }
+    }
+}
+
+.join-the-team{
+    .text-up{
+        h2{
+            font-family: 'Helvetica-bold';
+            line-height: 38px;
+            padding-top: 60px;
+            padding-bottom: 40px;
+            text-align: center;
+        }
+            p{
+                font-family: 'Helvetica-Regular';
+                line-height: 22px;
+                font-size: 16px;
+                width: 557px;
+                margin-left: auto;
+                margin-right: auto;
+                padding-bottom: 45px;
+                text-align: center;
+                font-weight: 400;
+            }
+            @include for-size(tablet-landscape-down  ) {
+                p{
+                    width: auto !important;
+                }
+            }
+    }
+
+    .les-4-pic{
+
+        .pic-1{
+            background-image: url(../img/image/section4-1-page2.jpg);
+        }
+        .pic-2{
+            background-image: url(../img/image/section4-2page2.jpg);
+           // margin-top: 20px;
+        }
+        .pic-3{
+            background-image: url(../img/image/sectio4-3page3@2x.jpg);
+        }
+        .pic-4{
+            background-image: url(../img/image/section3-4page2.jpg);
+        }
+        .pic{
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 544px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 300px;
+            margin-top: 25px;
+            h3{
+                color: white;
+                padding-left: 30px;
+                padding-top: 250px;
+            }
+        }
+        @include for-size(phone-only) {
+            .pic{
+                width: auto !important;
+                .long-titre{
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+
+.Opportunities{
+    color: white;
+    background-image: url(../img/image/section5-page2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 1150px;
+    h4{
+        padding-top: 180px;
+        font-size: 35px;
+        font-family: 'Helvetica-bold';
+        padding-bottom: 10px;
+    }
+    p{
+        font-family: 'arial-Regular';
+        font-size: 17px;
+        line-height: 23px;
+        width: 440px;
+        font-weight: inherit;
+    }
+    a{
+        color: #7378F9;
+        &:hover{
+            color: orange;
+        }
+    }
+    @include for-size(phone-only) {
+        p{
+            width: auto !important;
         }
     }
 }

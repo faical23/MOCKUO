@@ -9567,7 +9567,6 @@ nav.navbar .nav-content .nav-item .nav-link:hover::after, nav.navbar .nav-conten
 }
 
 footer {
-  border-top: 2px solid white;
   color: white;
   background-color: black;
   font-family: 'poppins-Regular';
@@ -9766,6 +9765,12 @@ footer .copyright {
   }
 }
 
+@media (max-width: 768px) {
+  .text-2 {
+    text-align: center;
+  }
+}
+
 .text-3 {
   padding-bottom: 70px;
   padding-top: 70px;
@@ -9863,6 +9868,112 @@ footer .copyright {
   }
 }
 
+.join-the-team .text-up h2 {
+  font-family: 'Helvetica-bold';
+  line-height: 38px;
+  padding-top: 60px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+.join-the-team .text-up p {
+  font-family: 'Helvetica-Regular';
+  line-height: 22px;
+  font-size: 16px;
+  width: 557px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 45px;
+  text-align: center;
+  font-weight: 400;
+}
+
+@media (max-width: 992px) {
+  .join-the-team .text-up p {
+    width: auto !important;
+  }
+}
+
+.join-the-team .les-4-pic .pic-1 {
+  background-image: url(../img/image/section4-1-page2.jpg);
+}
+
+.join-the-team .les-4-pic .pic-2 {
+  background-image: url(../img/image/section4-2page2.jpg);
+}
+
+.join-the-team .les-4-pic .pic-3 {
+  background-image: url(../img/image/sectio4-3page3@2x.jpg);
+}
+
+.join-the-team .les-4-pic .pic-4 {
+  background-image: url(../img/image/section3-4page2.jpg);
+}
+
+.join-the-team .les-4-pic .pic {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 544px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 300px;
+  margin-top: 25px;
+}
+
+.join-the-team .les-4-pic .pic h3 {
+  color: white;
+  padding-left: 30px;
+  padding-top: 250px;
+}
+
+@media (max-width: 576px) {
+  .join-the-team .les-4-pic .pic {
+    width: auto !important;
+  }
+  .join-the-team .les-4-pic .pic .long-titre {
+    font-size: 16px;
+  }
+}
+
+.Opportunities {
+  color: white;
+  background-image: url(../img/image/section5-page2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 1150px;
+}
+
+.Opportunities h4 {
+  padding-top: 180px;
+  font-size: 35px;
+  font-family: 'Helvetica-bold';
+  padding-bottom: 10px;
+}
+
+.Opportunities p {
+  font-family: 'arial-Regular';
+  font-size: 17px;
+  line-height: 23px;
+  width: 440px;
+  font-weight: inherit;
+}
+
+.Opportunities a {
+  color: #7378F9;
+}
+
+.Opportunities a:hover {
+  color: orange;
+}
+
+@media (max-width: 576px) {
+  .Opportunities p {
+    width: auto !important;
+  }
+}
+
 .ourteam {
   background-color: black;
   color: white;
@@ -9943,5 +10054,9 @@ footer .copyright {
   .ourteam p, .ourteam h4 {
     width: auto !important;
   }
+}
+
+.ourteam-footer {
+  border-top: 2px solid grey;
 }
 /*# sourceMappingURL=style.css.map */
