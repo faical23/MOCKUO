@@ -4,6 +4,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     height: 750px;
+    margin-top: 50px;
     p{
         font-size: 16px;
         font-family: 'arial-Bold';
@@ -19,8 +20,15 @@
     .right-menu{
         text-align: end;
         padding-top: 250px;
+        p{
+            font-size: 16px;
+            font-family: 'arial-Regular';
+            font-weight: 400;
+            font-style: normal;
+        }
         a{
             color: white;
+
             &:hover{
                 color: orange;
             }
@@ -77,12 +85,12 @@
         }
     }
     .menu-bar{
-        padding-right: 30px;
+        padding-right: 45px;
         h6{
             font-family: 'arial-Regular';
-            font-size: 16px;
+            font-size: 15px;
             font-style: normal;
-            font-weight: initial;
+            font-weight: 400;
         }
         .overview,.tech{
             color: #414141;
@@ -101,7 +109,7 @@
             border-radius: 20px;
             height: 25px;
             padding-top: 2px;   
-            background-color: orange;
+            background-color: #FF7416;
             &:hover{
                 background-color: white;
                 border: 1px solid black;
@@ -146,9 +154,14 @@
                     color: #585454;
                     font-family: 'arial-Bold';
                     font-size: 50px;   
+                    font-weight: 400;
+                    font-style: normal;
                 }
                 .plus{
                     text-align: end;
+                    font-family: 'arial-Regular';
+                    font-size: 50px;   
+    
                 }
             }
     
@@ -159,6 +172,7 @@
                 font-family: 'arial-Bold';
                 position: absolute;
                 visibility: hidden;
+                transition: max-height 650ms;
             }
         }
     }
@@ -170,6 +184,7 @@
     #work-of{
         position: absolute;
         visibility: hidden;
+        transform: translateY(-50%);
     }
     @include for-size(tablet-landscape-down) {
         .right-drop{
@@ -381,3 +396,4 @@
 
      }
 }
+

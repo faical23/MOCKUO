@@ -2,8 +2,8 @@
 
 nav.navbar {
     background-color: black;
-	padding-top: 15px;
-	padding-bottom: 15px;
+	padding-top: 5px;
+	padding-bottom: 5px;
 		.brand{
             width: 100%;
 		}
@@ -12,8 +12,10 @@ nav.navbar {
 			li{
 				a{
                     color: white;
-                    font-size: 18px;
-                    font-family: 'arial-Regular';
+                    font-size: 16px;
+					font-family: 'arial-Regular';
+					font-weight: 400;
+					font-style: normal;
 
 					&:hover{
 						color:  orange;
@@ -23,7 +25,7 @@ nav.navbar {
 
 			 }
 			.nav-item {
-				padding-left: 60px;
+				padding-left: 70px;
 			}
 		}
 		.menu-icon-wrapper svg path {
