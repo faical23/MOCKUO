@@ -12,106 +12,64 @@ $(() => {
 	$('[data-toggle="tooltip"]').tooltip();
 });
 
+///////// droping part
 
-//// scrooling header
-var navbar= document.querySelector(".test")
-var logo =  document.querySelector(".header-logo")
-var background_brand_on =  document.querySelector(".background-brand")
+var faster_drop = document.querySelector("#faster-drop");
+var smarter_drop = document.querySelector("#smarter-drop");
+var better_drop = document.querySelector("#better-drop");
 
-//// scroll katgolih ila lwindow bdat kathbet ltaht ikhdm la function fixe
-function fixe(){
-  navbar.classList.toggle('scrollactive' , window.scrollY > 0);	
-  logo.classList.toggle('logo-scroll' , window.scrollY > 0);	
-  background_brand_on.classList.toggle('background-brand-off' , window.scrollY > 0);	
+var faster_paraghraphe = document.querySelector("#faster-paraghraphe");
+var smarter_paraghraphe = document.querySelector("#smarter-paraghraphe");
+var better_paraghraphe = document.querySelector("#better-paraghraphe");
 
-}
-
-window.addEventListener('scroll', fixe)
+var faster = true;
+var smarter = true;
+var better = true;
 
 
-/////////// see more onclick features
-
-var see_more = document.querySelector("#see_more");
-var second_features_off = document.querySelector("#second-features-off");
-
-var x = true;
-
-function add_more_features(){
-	if(x == true){
-		second_features_off.id="#second-features-on";
-		see_more.innerHTML = "See Less";
-		x = false;
-	}
-	else{
-		second_features_off.id="second-features-off";
-		see_more.innerHTML = "See More";
-		x = true;
-	}
-
-}
-
-
-see_more.onclick = add_more_features;
-
-//////////////// see more onclick how to work
-
-var see_more_work = document.querySelector("#see-more-work");
-var second_work_off = document.querySelector("#work-off");
-
-var y = true
-
-function add_more_work(){
-	if(y == true){
-		second_work_off.id="work-on";
-		see_more_work.innerHTML = "See Less";
-		y = false;
-	}
-	else{
-		second_work_off.id="work-off";
-		see_more_work.innerHTML = "See More";
-		y = true;
-	}
-}
-
-see_more_work.onclick = add_more_work;
-
-
-
-
-/////////////////////// change logo on scroll and color of nab var
-var header_menu = document.getElementById("ul").querySelectorAll("a");  
-
-var btn1 = document.querySelector("#btn1");
-var nav_content = document.querySelector(".nav-content");
-
-window.onscroll = function () { 
-	scrollFunction(); 
-}; 
-
-function scrollFunction() { 
-	if (document.documentElement.scrollTop > 0) 
+function faster_worker()
+{
+	if( faster == true)
 	{
-		///// change btn1
-		btn1.className="change_btn1";
-		//////// change logo
-		logo.src = "assets/img/logo/Web 1366 - 2-image4.svg"; 
-		////////  change all menu
-	for(i =0; i<header_menu.length;i++){
-		header_menu[i].id="menu_change";
-		}
+		faster_paraghraphe.id="work-on";
+		faster = false ;
+	}
+	else{
+		faster_paraghraphe.id="work-of";
+		faster = true;
 	}
 
+}
+
+function smarter_worker()
+{
+	if(smarter == true)
+	{
+		smarter_paraghraphe.id="work-on";
+		smarter = false;
+	}
 	else{
-		//nav_content.style.backgroundColor = "white"; 
-		btn1.className="No_change_btn1";
-		logo.src = "assets/img/logo/1-02.png"; 
-		for(i =0; i<header_menu.length;i++){
-			header_menu[i].id="menu_no-change";
-			}
-	} 
+		smarter_paraghraphe.id="work-of";
+		smarter = true
+	}
+}
 
-} 
+function better_worker()
+{
+	if(better == true)
+	{
+		better_paraghraphe.id ="work-on";
+		better = false;
+	}
+	else{
+		better_paraghraphe.id ="work-of";
+		better = true;
+	}
+}
+
+faster_drop.onclick = faster_worker;
+smarter_drop.onclick = smarter_worker;
+better_drop.onclick = better_worker;
 
 
-//////////// animation 
 

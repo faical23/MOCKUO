@@ -9682,14 +9682,15 @@ footer .copyright {
 
 @media (max-width: 576px) {
   .hero-index {
-    background-repeat: round !important;
+    background-position-x: left;
     height: 400px;
   }
   .hero-index .right-menu {
-    padding-top: 150px;
+    padding-top: 50px;
+    text-align: start;
   }
   .hero-index .left-text {
-    padding-top: 300px;
+    padding-top: 170px;
   }
   .hero-index .left-text h2 {
     font-size: 20px;
@@ -9699,47 +9700,47 @@ footer .copyright {
   }
 }
 
-.second-menu {
+.second-menu-page1 {
   padding-top: 10px;
   background-color: #e1e1e1;
 }
 
-.second-menu .nanoSPLASH {
+.second-menu-page1 .nanoSPLASH {
   padding-left: 80px;
 }
 
-.second-menu .nanoSPLASH h6 {
+.second-menu-page1 .nanoSPLASH h6 {
   font-family: 'arial-Bold';
   font-size: 16px;
   color: #222222;
 }
 
-.second-menu .menu-bar {
+.second-menu-page1 .menu-bar {
   padding-right: 30px;
 }
 
-.second-menu .menu-bar h6 {
+.second-menu-page1 .menu-bar h6 {
   font-family: 'arial-Regular';
   font-size: 16px;
   font-style: normal;
   font-weight: initial;
 }
 
-.second-menu .menu-bar .overview, .second-menu .menu-bar .tech {
+.second-menu-page1 .menu-bar .overview, .second-menu-page1 .menu-bar .tech {
   color: #414141;
 }
 
-.second-menu .menu-bar .overview:hover, .second-menu .menu-bar .tech:hover {
+.second-menu-page1 .menu-bar .overview:hover, .second-menu-page1 .menu-bar .tech:hover {
   color: #B6B6B6;
 }
 
-.second-menu .menu-bar .button-menu {
+.second-menu-page1 .menu-bar .button-menu {
   color: white;
   position: relative;
   bottom: 4px;
 }
 
-.second-menu .menu-bar .button-buy {
+.second-menu-page1 .menu-bar .button-buy {
   width: 72px;
   text-align: center;
   border-radius: 20px;
@@ -9748,35 +9749,282 @@ footer .copyright {
   background-color: orange;
 }
 
-.second-menu .menu-bar .button-buy:hover {
+.second-menu-page1 .menu-bar .button-buy:hover {
   background-color: white;
   border: 1px solid black;
   color: black;
 }
 
-.second-menu .menu-bar .menu-white {
+.second-menu-page1 .menu-bar .menu-white {
   text-align: initial;
 }
 
 @media (max-width: 992px) {
-  .second-menu .menu-bar {
+  .second-menu-page1 .menu-bar {
     padding-right: 0px !important;
   }
 }
 
 @media (max-width: 768px) {
-  .second-menu .nanoSPLASH {
+  .second-menu-page1 .nanoSPLASH {
     padding-left: 0px !important;
   }
 }
 
 @media (max-width: 576px) {
-  .second-menu {
+  .second-menu-page1 {
     text-align: center;
   }
-  .second-menu .menu-white {
+  .second-menu-page1 .menu-white {
     padding-top: 5px;
     text-align: center !important;
+  }
+}
+
+.part-droping {
+  padding-top: 50px;
+  background-color: #f7f7f7;
+}
+
+.part-droping .right-drop {
+  padding-top: 80px;
+}
+
+.part-droping .right-drop .text-drop {
+  border-bottom: 2px solid black;
+}
+
+.part-droping .right-drop .text-drop .click-to-drop {
+  cursor: pointer;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.part-droping .right-drop .text-drop .click-to-drop h2 {
+  color: #585454;
+  font-family: 'arial-Bold';
+  font-size: 50px;
+}
+
+.part-droping .right-drop .text-drop .click-to-drop .plus {
+  text-align: end;
+}
+
+.part-droping .right-drop .text-drop p {
+  color: black;
+  font-size: 13px;
+  line-height: 21px;
+  font-family: 'arial-Bold';
+  position: absolute;
+  visibility: hidden;
+}
+
+.part-droping #work-on {
+  position: inherit;
+  visibility: inherit;
+}
+
+.part-droping #work-of {
+  position: absolute;
+  visibility: hidden;
+}
+
+@media (max-width: 992px) {
+  .part-droping .right-drop {
+    padding-top: 30px;
+  }
+  .part-droping .right-drop .text-drop .click-to-drop h2 {
+    font-size: 40px;
+  }
+  .part-droping .right-drop .text-drop p {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .part-droping .right-drop {
+    padding-top: 5px;
+  }
+  .part-droping .right-drop .text-drop .click-to-drop h2 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  .part-droping .right-drop {
+    padding-top: 5px;
+  }
+  .part-droping .produit-img {
+    text-align: center;
+  }
+}
+
+.the-world-first .left-text-section1 {
+  padding-top: 120px;
+}
+
+.the-world-first .left-text-section1 h2 {
+  font-family: 'arial-Bold';
+  font-size: 26px;
+  border-bottom: 4px solid orangered;
+  padding-bottom: 20px;
+  color: #646464;
+}
+
+.the-world-first .left-text-section1 .first-para-section1 {
+  color: #B0ACAC;
+  font-size: 21px;
+  font-family: 'arial-Regular';
+  padding-top: 30px;
+  padding-bottom: 30px;
+  line-height: 25px;
+}
+
+.the-world-first .left-text-section1 .part-bottom-left .number-line {
+  padding-bottom: 10px;
+  padding-top: 22px;
+}
+
+.the-world-first .left-text-section1 .part-bottom-left .number-line span {
+  font-family: 'arial-Bold';
+  font-size: 29px;
+  color: #646464;
+}
+
+.the-world-first .left-text-section1 .part-bottom-left .number-line p {
+  color: #B0ACAC;
+  font-size: 21px;
+  font-family: 'arial-Regular';
+  line-height: 25px;
+}
+
+.the-world-first .left-text-section1 .part-bottom-left .circle {
+  border: 6px solid #969696;
+  padding: 25px 20px;
+  border-radius: 100%;
+}
+
+.the-world-first .left-text-section1 .part-bottom-left .circle-1 {
+  background-color: #E9E9E9;
+}
+
+.the-world-first .left-text-section1 .part-bottom-left .circle-2 {
+  background-color: #F86262;
+}
+
+.the-world-first .left-text-section1 .part-bottom-left .titre-circle {
+  font-family: 'arial-Regular';
+  color: black;
+  font-size: 12px;
+  line-height: 19px;
+  padding-top: 5px;
+  text-align: center;
+}
+
+@media (max-width: 1200px) {
+  .the-world-first .left-text-section1 {
+    padding-top: 60px;
+  }
+  .the-world-first .left-text-section1 .part-bottom-left .number-line {
+    padding-bottom: 10px;
+    padding-top: 22px;
+  }
+  .the-world-first .left-text-section1 .part-bottom-left .circle {
+    padding: 25px 25px !important;
+  }
+}
+
+@media (max-width: 992px) {
+  .the-world-first .left-text-section1 {
+    padding-top: 30px;
+  }
+  .the-world-first .left-text-section1 h2 {
+    font-size: 20px !important;
+  }
+  .the-world-first .left-text-section1 .first-para-section1 {
+    font-size: 18px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .the-world-first .left-text-section1 .part-bottom-left .number-line {
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+  .the-world-first .left-text-section1 .part-bottom-left .circle {
+    padding: 25px 25px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .the-world-first .left-text-section1 {
+    padding-top: 15px;
+  }
+  .the-world-first .left-text-section1 h2 {
+    font-size: 12px !important;
+  }
+  .the-world-first .left-text-section1 .first-para-section1 {
+    font-size: 14px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    line-height: 18px;
+  }
+  .the-world-first .left-text-section1 .part-bottom-left {
+    padding-left: 20px;
+  }
+  .the-world-first .left-text-section1 .part-bottom-left .number-line {
+    padding-bottom: 0px;
+    padding-top: 0px;
+  }
+  .the-world-first .left-text-section1 .part-bottom-left .number-line span {
+    font-size: 18px;
+  }
+  .the-world-first .left-text-section1 .part-bottom-left .number-line p {
+    font-size: 14px;
+  }
+  .the-world-first .left-text-section1 .part-bottom-left .circle {
+    padding: 20px 20px !important;
+    border: 4px solid #969696;
+  }
+  .the-world-first .left-text-section1 .part-bottom-left .titre-circle {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .the-world-first .left-text-section1 {
+    padding-top: 15px;
+    text-align: center;
+  }
+  .the-world-first .left-text-section1 h2 {
+    font-size: 12px !important;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .the-world-first .left-text-section1 .first-para-section1 {
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .the-world-first .left-text-section1 .part-bottom-left {
+    text-align: center;
+  }
+  .the-world-first .left-text-section1 .part-bottom-left .number-line {
+    padding-bottom: 0px;
+    padding-top: 0px;
+  }
+  .the-world-first .left-text-section1 .part-bottom-left .number-line span {
+    font-size: 18px;
+  }
+  .the-world-first .left-text-section1 .part-bottom-left .number-line p {
+    font-size: 14px;
+  }
+  .the-world-first .left-text-section1 .part-bottom-left .circle {
+    padding: 20px 20px !important;
+    border: 4px solid #969696;
+  }
+  .the-world-first .left-text-section1 .part-bottom-left .titre-circle {
+    font-size: 10px;
   }
 }
 

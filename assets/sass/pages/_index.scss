@@ -47,13 +47,14 @@
         
     }
     @include for-size(phone-only ) {
-        background-repeat: round !important;
+        background-position-x: left;
         height: 400px;
         .right-menu{
-            padding-top: 150px;
+            padding-top: 50px;
+            text-align: start;
         }
         .left-text{
-            padding-top: 300px;
+            padding-top: 170px;
             h2{
                 font-size: 20px;
             }
@@ -64,7 +65,7 @@
     }
 }
 
-.second-menu{
+.second-menu-page1{
     padding-top: 10px;
     background-color: rgb(225, 225, 225);
     .nanoSPLASH{
@@ -128,4 +129,255 @@
             text-align:center !important;
         }
     }
+}
+
+.part-droping{
+    padding-top: 50px;
+    background-color: #f7f7f7;
+    .right-drop{
+        padding-top: 80px;
+        .text-drop{
+            border-bottom: 2px solid black;
+            .click-to-drop{
+                cursor: pointer;
+                padding-bottom: 10px;
+                padding-top: 10px;
+                h2{
+                    color: #585454;
+                    font-family: 'arial-Bold';
+                    font-size: 50px;   
+                }
+                .plus{
+                    text-align: end;
+                }
+            }
+    
+            p{
+                color: black;
+                font-size: 13px;
+                line-height: 21px;
+                font-family: 'arial-Bold';
+                position: absolute;
+                visibility: hidden;
+            }
+        }
+    }
+
+    #work-on{
+        position: inherit;
+        visibility: inherit;
+    }
+    #work-of{
+        position: absolute;
+        visibility: hidden;
+    }
+    @include for-size(tablet-landscape-down) {
+        .right-drop{
+            padding-top: 30px;
+            .text-drop{
+                .click-to-drop{
+                    h2{
+                        font-size: 40px;   
+                    }
+                }
+                p{
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+    @include for-size(tablet-portrait-down) {
+        .right-drop{
+            padding-top: 5px;
+            .text-drop{
+                .click-to-drop{
+                    h2{
+                        font-size: 30px;   
+                    }
+                }
+            }
+        }
+    }
+    @include for-size(phone-only) {
+        .right-drop{
+            padding-top: 5px;
+        }
+            .produit-img{
+                text-align: center;
+
+            }
+    }
+}
+
+.the-world-first{
+    .left-text-section1
+    {
+        padding-top: 120px;
+       h2{
+        font-family: 'arial-Bold';
+        font-size: 26px;
+        border-bottom: 4px solid orangered;
+        padding-bottom: 20px;
+        color: #646464;
+       } 
+       .first-para-section1{
+           color: #B0ACAC;
+           font-size: 21px;
+           font-family: 'arial-Regular';
+           padding-top: 30px;
+           padding-bottom: 30px;
+           line-height: 25px;
+       }
+       .part-bottom-left{
+        .number-line{
+            padding-bottom: 10px;
+            padding-top: 22px;
+            span{
+                font-family: 'arial-Bold';
+                font-size: 29px;
+                color: #646464;
+            }
+            p{
+                color: #B0ACAC;
+                font-size: 21px;
+                font-family: 'arial-Regular';
+                line-height: 25px;
+            }
+        }
+        .circle{
+            border: 6px solid #969696;
+            padding:25px 20px ;
+            border-radius: 100%;
+        }
+        .circle-1{
+            background-color: #E9E9E9;
+        }
+        .circle-2{
+            background-color: #F86262;
+        }
+        .titre-circle{
+            font-family: 'arial-Regular';
+            color: black;
+            font-size: 12px;
+            line-height: 19px;
+            padding-top: 5px;
+            text-align: center;
+        }
+       }
+    }
+    @include for-size(desktop-down) {
+        .left-text-section1{
+            padding-top: 60px;
+            .part-bottom-left{
+                .number-line{
+                    padding-bottom: 10px;
+                    padding-top: 22px;
+                    }
+                .circle{
+                    padding:25px 25px !important;
+                }
+                }
+
+        }
+
+     }
+     @include for-size(tablet-landscape-down ) {
+        .left-text-section1{
+            padding-top: 30px;
+            h2{
+                font-size: 20px !important;
+            }
+            .first-para-section1{
+                font-size: 18px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+            .part-bottom-left{
+                .number-line{
+                    padding-bottom: 10px;
+                    padding-top: 10px;
+                    }
+                .circle{
+                    padding:25px 25px !important;
+                }
+                }
+
+        }
+
+     }
+     @include for-size(tablet-portrait-down) {
+        .left-text-section1{
+            padding-top: 15px;
+            h2{
+                font-size: 12px !important;
+            }
+            .first-para-section1{
+                font-size: 14px;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                line-height: 18px;
+            }
+            .part-bottom-left{
+                padding-left: 20px;
+                .number-line{
+                    padding-bottom: 0px;
+                    padding-top: 0px;
+                    span{
+                        font-size: 18px;
+                    }
+                    p{
+                        font-size: 14px;
+                    }
+                    }
+                .circle{
+                    padding:20px 20px !important;
+                    border: 4px solid #969696;
+                }
+                .titre-circle{
+                    font-size: 10px;
+                }
+                }
+
+        }
+
+     }
+     @include for-size(phone-only ) {
+        .left-text-section1{
+            padding-top: 15px;
+            text-align: center;
+            h2{
+                font-size: 12px !important;
+                width: 300px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .first-para-section1{
+                width: 300px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .part-bottom-left{
+                text-align: center;
+                .number-line{
+                    padding-bottom: 0px;
+                    padding-top: 0px;
+                    span{
+                        font-size: 18px;
+                    }
+                    p{
+                        font-size: 14px;
+                    }
+                    }
+                .circle{
+                    padding:20px 20px !important;
+                    border: 4px solid #969696;
+                }
+                .titre-circle{
+                    font-size: 10px;
+                }
+                }
+
+        }
+
+     }
 }
